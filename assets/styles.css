@@ -1,0 +1,643 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Syles for the hero banner section*/
+/* Set the height of the section to cover the viewport */
+.hero-banner__section {
+    height: 100vh;
+}
+
+/* Container for the hero banner content */
+.hero-banner__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Background image */
+.hero-banner__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text content */
+.hero-banner__container h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 4.5rem;
+    text-align: center;
+    z-index: 15;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
+}
+
+/* Logo image */
+.hero-banner__logo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    z-index: 17;
+}
+
+.hero-banner__pattern{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 15;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-banner__container h1 {
+        font-size: 3.2rem;
+    }
+}
+
+/*Syles for the hero banner section - END */
+
+/*Syles for the reversible card section*/
+.reversible-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reversible-card {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.reversible-card-reversed {
+    flex-direction: row-reverse;
+}
+
+.reversible-card .reversible-card-image {
+    margin-right: 5%;
+}
+
+.reversible-card-reversed .reversible-card-image {
+    margin-left: 5%;
+}
+
+.reversible-card-text {
+    width: 50%;
+    padding: 3% 0;
+}
+
+.reversible-card-text h2 {
+    color: #2d4059;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 52px;
+}
+
+.reversible-card-text h2:after {
+    font-size: 1.5em;
+    content: '\e945';
+    font-family: 'fontello';
+    display: block;
+    line-height: 0;
+    margin-top: 0.44em;
+}
+
+.reversible-card-text p {
+    color: #2d4059;
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.reversible-card-container a {
+    padding: 10px 20px;
+    color: white;
+    background: #2d4059;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    min-width: 10%;
+    text-align: center;
+    border: 1px solid rgb(45, 64, 89, 0);
+}
+
+.reversible-card-container a:hover {
+    background: white;
+    color: #2d4059;
+    border: 1px solid #2d4059;
+}
+
+
+@media only screen and (max-width: 940px) {
+    .reversible-card .reversible-card-text {}
+}
+
+@media only screen and (max-width: 768px) {
+    .reversible-card-text h2 {
+        padding: 0 5%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .reversible-card-text p {
+        padding: 0 5%;
+    }
+
+    .reversible-card .reversible-card-text {}
+
+    .reversible-card .reversible-card-image {
+        margin-right: 0;
+    }
+
+    .reversible-card-reversed .reversible-card-image {
+        margin-left: 0;
+    }
+
+    .reversible-card {
+        display: block;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reversible-card-text {
+        width: 100%;
+    }
+}
+
+/*Syles for the reversible card section - END*/
+
+/*Syles for the background card section*/
+.background-card-section{
+    position: relative;
+}
+.background-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A5CA7;
+    background-image: url('https://www.waveexpeditions.com/wp-content/uploads/2020/01/header_bg.jpg');
+    padding-bottom: 5%;
+    
+}
+
+.background-card {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.background-card-reversed {
+    flex-direction: row-reverse;
+}
+
+.background-card-image img {
+    border-radius: 50%;
+}
+
+.background-card .background-card-image {
+    margin-right: 5%;
+}
+
+.background-card-reversed .background-card-image {
+    margin-left: 5%;
+}
+
+.background-card-text {
+    width: 50%;
+    padding: 3% 0;
+}
+
+.background-card-text h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 52px;
+}
+
+.background-card-text h2:after {
+    font-size: 1.5em;
+    content: '\e945';
+    font-family: 'fontello';
+    display: block;
+    line-height: 0;
+    margin-top: 0.44em;
+}
+
+.background-card-text p {
+    color: #ffffff;
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.background-card-container a {
+    padding: 10px 20px;
+    color: #2d4059;
+    background: #ffffff;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    min-width: 10%;
+    text-align: center;
+    border: 1px solid #ffffff;
+    z-index: 25;
+    margin-bottom: 4%;
+}
+
+.background-card-container a:hover {
+    background: #F7EE26;
+    color: #2d4059;
+    border: 1px solid #F7EE26;
+    
+}
+
+
+@media only screen and (max-width: 940px) {
+    .background-card .background-card-text {}
+}
+
+@media only screen and (max-width: 768px) {
+    .background-card-text h2 {
+        padding: 0 5%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .background-card-text p {
+        padding: 0 5%;
+    }
+
+    .background-card .background-card-text {}
+
+    .background-card .background-card-image {
+        margin-right: 0;
+        margin-top: 5%;
+    }
+
+    .background-card-reversed .background-card-image {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+
+    .background-card {
+        display: block;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background-card-text {
+        width: 100%;
+    }
+}
+
+
+
+/*Syles for the background card section - END*/
+
+
+/*Syles for the article card section*/
+.article-cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3% 0;
+}
+
+.title__h2 h2,
+.article-cards__container h2 {
+    color: #2d4059;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+}
+
+.title__h2 h2:after {
+    font-size: 1.5em;
+    content: '\e945';
+    font-family: 'fontello';
+    display: block;
+    line-height: 0;
+    margin-top: 0.44em;
+}
+
+.article-card__wrapper {
+    width: calc(25.33% - 10px);
+    margin: 25px;
+    max-width: 25rem;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.article-card__wrapper:hover {
+    transform: scale(1.02);
+}
+
+.article-card__image {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.article-card__image img {
+    image-rendering: crisp-edges;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.article-card__content {
+    padding: 1.5rem;
+}
+
+.article-card__content a {
+    text-decoration: none;
+    color: #0A5CA7;
+}
+
+.article-card__content a h2 {
+    font-size: 1.7rem;
+    display: inline;
+    margin: 0;
+    margin-left: -1px;
+}
+
+.article-card__content a:hover {
+    color: #288ac2;
+}
+
+.article-card__content .content>p {
+    line-height: 1.25rem;
+    font-size: 0.95rem;
+    text-align: justify;
+    color: #288ac2;
+    margin: 0;
+    margin-top: 1.25rem;
+}
+
+.article-card__footer {
+    background: rgba(68, 163, 217, 0.1);
+}
+
+.article-card__footer a {
+    display: flex;
+    border-top: 1px solid rgba(128, 128, 128, 0.1);
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2d4059;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article-card__footer a:hover {
+    color: #0A5CA7;
+    background: rgba(68, 163, 217, 0.2);
+}
+
+.article-card__footer a::after {
+    content: " → ";
+    margin-left: auto;
+    transition: 0.3s;
+    font-size: 1.25rem;
+}
+
+
+@media only screen and (max-width: 940px) {}
+
+@media only screen and (max-width: 768px) {
+    .article-cards__container {
+        flex-direction: column;
+    }
+
+    .article-card__wrapper {
+        width: auto;
+    }
+}
+
+/*Syles for the article card section - END*/
+
+
+/*Syles for the animated card section*/
+
+.animated-cards__outter-container {
+    padding: 3% 0;
+    background-color: #EBEBEB;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-cards__outter-container .title__h2 h2 {
+    margin-top: 0;
+}
+
+.animated-cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.animated-cards__outter-container .card {
+    display: inline-block;
+    width: calc(25.33% - 10px);
+    height: 300px;
+    perspective: 1000px;
+    margin: 1%;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotateX(0deg);
+    position: absolute;
+}
+
+.front .title {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 15px;
+    bottom: 0;
+    z-index: 3;
+}
+
+.back {
+    background-color: #2d4059;
+    transform: rotateX(180deg);
+    transform-origin: center;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.front .title,
+.back .title {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+.back .content,
+.front .title {
+    padding: 20px;
+}
+
+.back .description {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.animated-cards__outter-container .card:hover .front {
+    transform: rotateX(180deg);
+}
+
+.animated-cards__outter-container .card:hover .back {
+    transform: rotateX(0deg);
+}
+
+
+.opaque-layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+
+.animated-cards__outter-container .cta {
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #2d4059;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    min-width: 10%;
+    text-align: center;
+    border: 1px solid #2d4059;
+    align-self: center;
+    margin-top: 1%;
+}
+
+.animated-cards__outter-container .cta:hover {
+    background: #ffffff;
+    color: #2d4059;
+    border: 1px solid #2d4059;
+}
+
+@media only screen and (max-width: 768px) {
+    .animated-cards__container {
+        flex-direction: column;
+    }
+
+    .animated-cards__outter-container .card {
+        width: 80%;
+    }
+}
+
+/*Syles for the animated card section - END*/
+
+
+/*Styles for the logo banner section*/
+.logo-banner__section{
+    background-color: #EBEBEB;
+    padding: 5% 0;
+}
+
+.logo-banner__container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.logo-banner__image{
+    width: 180px;
+    max-width: 180px;
+}
+
+.logo-banner__image:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-banner__container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+         overflow-x: scroll;
+         overflow-y: hidden;
+         width: 100%;
+         height: 300px;
+    }
+
+    .logo-banner__image{
+        width: 250px;
+        max-width: 250px;
+        min-width: 250px;
+        margin: 5%;
+        display: inline-block;
+        zoom: 1;
+    }
+
+    .logo-banner__image:hover{
+        transform: scale(1);
+    }
+}
+/*Styles for the logo banner section - END*/
