@@ -62,6 +62,15 @@ body {
     .hero-banner__container h1 {
         font-size: 3.2rem;
     }
+
+    .hero-banner__pattern{
+        width: auto;
+    }
+
+    .hero-banner__section {
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 /*Syles for the hero banner section - END */
@@ -277,6 +286,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .background-card-section{
+        width: 100%;
+        overflow: hidden;
+    }
+    .background-card-container a{
+        margin-bottom: 25%;
+    }
+
     .background-card-text h2 {
         padding: 0 5%;
         font-size: 2.5rem;
@@ -585,6 +602,14 @@ body {
 
     .animated-cards__outter-container .card {
         width: 80%;
+    }
+
+    .animated-cards__outter-container .cta {
+        margin: 5% 0;
+    }
+
+    .animated-cards__outter-container .title__h2 h2{
+        margin-top: 5%;
     }
 }
 
