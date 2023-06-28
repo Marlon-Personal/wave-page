@@ -50,7 +50,7 @@ body {
     z-index: 17;
 }
 
-.hero-banner__pattern{
+.hero-banner__pattern {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -63,7 +63,7 @@ body {
         font-size: 3.2rem;
     }
 
-    .hero-banner__pattern{
+    .hero-banner__pattern {
         width: auto;
     }
 
@@ -192,9 +192,10 @@ body {
 /*Syles for the reversible card section - END*/
 
 /*Syles for the background card section*/
-.background-card-section{
+.background-card-section {
     position: relative;
 }
+
 .background-card-container {
     display: flex;
     flex-direction: column;
@@ -202,7 +203,7 @@ body {
     background-color: #0A5CA7;
     background-image: url('https://www.waveexpeditions.com/wp-content/uploads/2020/01/header_bg.jpg');
     padding-bottom: 5%;
-    
+
 }
 
 .background-card {
@@ -277,7 +278,7 @@ body {
     background: #F7EE26;
     color: #2d4059;
     border: 1px solid #F7EE26;
-    
+
 }
 
 
@@ -286,11 +287,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .background-card-section{
+    .background-card-section {
         width: 100%;
         overflow: hidden;
     }
-    .background-card-container a{
+
+    .background-card-container a {
         margin-bottom: 25%;
     }
 
@@ -608,7 +610,7 @@ body {
         margin: 5% 0;
     }
 
-    .animated-cards__outter-container .title__h2 h2{
+    .animated-cards__outter-container .title__h2 h2 {
         margin-top: 5%;
     }
 }
@@ -617,12 +619,12 @@ body {
 
 
 /*Styles for the logo banner section*/
-.logo-banner__section{
+.logo-banner__section {
     background-color: #EBEBEB;
     padding: 5% 0;
 }
 
-.logo-banner__container{
+.logo-banner__container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
@@ -632,27 +634,27 @@ body {
     margin: auto;
 }
 
-.logo-banner__image{
+.logo-banner__image {
     width: 180px;
     max-width: 180px;
 }
 
-.logo-banner__image:hover{
+.logo-banner__image:hover {
     transform: scale(1.2);
 }
 
 @media only screen and (max-width: 768px) {
-    .logo-banner__container{
+    .logo-banner__container {
         display: flex;
         flex-direction: row;
         position: relative;
-         overflow-x: scroll;
-         overflow-y: hidden;
-         width: 100%;
-         height: 300px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        height: 300px;
     }
 
-    .logo-banner__image{
+    .logo-banner__image {
         width: 250px;
         max-width: 250px;
         min-width: 250px;
@@ -661,8 +663,9 @@ body {
         zoom: 1;
     }
 
-    .logo-banner__image:hover{
+    .logo-banner__image:hover {
         transform: scale(1);
     }
 }
+
 /*Styles for the logo banner section - END*/
